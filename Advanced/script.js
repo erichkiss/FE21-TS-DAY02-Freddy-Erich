@@ -24,7 +24,7 @@ var Vehicles = /** @class */ (function () {
         array.push(this);
     }
     Vehicles.prototype.showPreis = function () {
-        //return `${this.brand} and ${this.constructionYear} and ${this.type} and ${this.doors} and ${this.tuev}.<br>`;
+        return "" + this.constructionYear * this.doors;
     };
     return Vehicles;
 }());
@@ -59,3 +59,4 @@ var mot1 = new Motorbike("Kawasaki", 2005, "GZ-324", 0, true, "tree", false);
 var mot2 = new Motorbike("Honda", 2000, "HD-3004", 0, true, "two", false);
 var truck1 = new Truck("MAN", 2021, "MN-456", 3, true, 3.5, true);
 console.table(array);
+console.log(car1.showPreis());

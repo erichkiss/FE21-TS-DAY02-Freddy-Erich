@@ -16,7 +16,7 @@ class Vehicles {
     }
 
     showPreis() {
-        //return `${this.brand} and ${this.constructionYear} and ${this.type} and ${this.doors} and ${this.tuev}.<br>`;
+        return `${this.constructionYear*this.doors}`;
     }
 }
 
@@ -54,3 +54,4 @@ let mot2 = new Motorbike("Honda", 2000, "HD-3004", 0,true,"two",false);
 let truck1 = new Truck("MAN",2021,"MN-456",3,true,3.5,true);
 
 console.table(array);
+console.log(car1.showPreis());
